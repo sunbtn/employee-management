@@ -13,7 +13,7 @@ class CreateCitiesTable extends Migration {
 	public function up() {
 		Schema::create('cities', function (Blueprint $table) {
 			$table->id();
-			$table->foreignId('country_id')->constanted();
+			$table->foreignId('state_id')->constanted();
 			$table->string('name');
 			$table->timestamps();
 		});
